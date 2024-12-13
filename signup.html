@@ -1,0 +1,320 @@
+<html lang="en">
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SignupPage</title>
+<link rel="stylesheet" type="text/css" href="./signup.css" />
+
+<head>
+    <style>
+
+
+    </style>
+
+</head>
+
+<body aria-hidden="false" style="padding: 0px 0px 0px;">
+    <app-root _nghost-serverapp-c107="" ng-version="15.2.5"><sbpro-toast-view _ngcontent-serverapp-c107=""
+            aria-live="polite" aria-atomic="true" class="ngb-toasts"
+            _nghost-serverapp-c45=""><!----></sbpro-toast-view><sbw-overlay _ngcontent-serverapp-c107=""
+            _nghost-serverapp-c106=""><!----></sbw-overlay><router-outlet
+            _ngcontent-serverapp-c107=""></router-outlet><sbpro-register _nghost-serverapp-c93=""><sb-layout-auth
+                _ngcontent-serverapp-c93="" _nghost-serverapp-c88="">
+                <div _ngcontent-serverapp-c88="" id="layoutAuthentication" class="bg-primary">
+                    <div _ngcontent-serverapp-c88="" id="layoutAuthentication_content">
+                        <main _ngcontent-serverapp-c88="">
+                            <div _ngcontent-serverapp-c93="" class="container">
+                                <div _ngcontent-serverapp-c93="" class="row justify-content-center"><sbpro-page-card
+                                        _ngcontent-serverapp-c93="" size="large" _nghost-serverapp-c33=""><!----><!---->
+                                        <div _ngcontent-serverapp-c33="" class="col-xl-10 col-lg-12">
+                                            <div _ngcontent-serverapp-c33="" class="card border my-5">
+                                                <div _ngcontent-serverapp-c93="" class="card-body p-5 text-center"><a
+                                                        _ngcontent-serverapp-c93="" routerlink="/"
+                                                        class="d-inline-block mb-4" href="/"><img
+                                                            _ngcontent-serverapp-c93=""
+                                                            src="data:image/png;base64,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"
+                                                            style="height: 7rem; width: 7rem;"></a>
+                                                    <div _ngcontent-serverapp-c93="" class="row justify-content-center">
+                                                        <div _ngcontent-serverapp-c93="" class="col-lg-8 mb-4">
+                                                            <h2 _ngcontent-serverapp-c93="">Sign up on Start Bootstrap
+                                                            </h2>
+                                                            <p _ngcontent-serverapp-c93="" class="mb-0">Join our
+                                                                community of designers and developers and manage your
+                                                                purchases, favorite themes and snippets, comments, and
+                                                                more!</p>
+                                                        </div>
+                                                    </div><sbpro-brand-login _ngcontent-serverapp-c93=""
+                                                        _nghost-serverapp-c89=""><button _ngcontent-serverapp-c89=""
+                                                            data-cy="socialLoginTwitter"
+                                                            class="btn btn-twitter btn-auth m-1"><fa-icon
+                                                                _ngcontent-serverapp-c89="" size="sm"
+                                                                class="ng-fa-icon me-1"><svg role="img"
+                                                                    aria-hidden="true" focusable="false"
+                                                                    data-prefix="fab" data-icon="twitter"
+                                                                    class="svg-inline--fa fa-twitter fa-fw fa-sm"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 512 512">
+                                                                    <path fill="currentColor"
+                                                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                                    </path>
+                                                                </svg></fa-icon>Log in with Twitter</button><button
+                                                            _ngcontent-serverapp-c89="" data-cy="socialLoginFacebook"
+                                                            class="btn btn-facebook btn-auth m-1"><fa-icon
+                                                                _ngcontent-serverapp-c89="" size="sm"
+                                                                class="ng-fa-icon me-1"><svg role="img"
+                                                                    aria-hidden="true" focusable="false"
+                                                                    data-prefix="fab" data-icon="facebook-f"
+                                                                    class="svg-inline--fa fa-facebook-f fa-fw fa-sm"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 320 512">
+                                                                    <path fill="currentColor"
+                                                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                    </path>
+                                                                </svg></fa-icon>Log in with Facebook</button><button
+                                                            _ngcontent-serverapp-c89="" data-cy="socialLoginGoogle"
+                                                            class="btn btn-google btn-auth m-1"><fa-icon
+                                                                _ngcontent-serverapp-c89="" size="sm"
+                                                                class="ng-fa-icon me-1"><svg role="img"
+                                                                    aria-hidden="true" focusable="false"
+                                                                    data-prefix="fab" data-icon="google"
+                                                                    class="svg-inline--fa fa-google fa-fw fa-sm"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 488 512">
+                                                                    <path fill="currentColor"
+                                                                        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+                                                                    </path>
+                                                                </svg></fa-icon>Log in with Google</button><button
+                                                            _ngcontent-serverapp-c89="" data-cy="socialLoginGithub"
+                                                            class="btn btn-github btn-auth m-1"><fa-icon
+                                                                _ngcontent-serverapp-c89="" size="sm"
+                                                                class="ng-fa-icon me-1"><svg role="img"
+                                                                    aria-hidden="true" focusable="false"
+                                                                    data-prefix="fab" data-icon="github"
+                                                                    class="svg-inline--fa fa-github fa-fw fa-sm"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 496 512">
+                                                                    <path fill="currentColor"
+                                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                    </path>
+                                                                </svg></fa-icon>Log in with
+                                                            GitHub</button></sbpro-brand-login>
+                                                </div>
+                                                <hr _ngcontent-serverapp-c93="" class="my-0">
+                                                <div _ngcontent-serverapp-c93="" class="card-body p-5">
+                                                    <div _ngcontent-serverapp-c93=""
+                                                        class="text-center small text-muted mb-4">...or enter your
+                                                        information below.</div><sbpro-register-form
+                                                        _ngcontent-serverapp-c93="" _nghost-serverapp-c92="">
+                                                        <form _ngcontent-serverapp-c92="" novalidate=""
+                                                            class="ng-untouched ng-pristine ng-invalid">
+                                                            <div _ngcontent-serverapp-c92="" class="row">
+                                                                <div _ngcontent-serverapp-c92="" class="col-md-6">
+                                                                    <div _ngcontent-serverapp-c92="" class="mb-3"><label
+                                                                            _ngcontent-serverapp-c92=""
+                                                                            for="firstNameInput"
+                                                                            class="text-gray-600 small">First
+                                                                            name</label><input
+                                                                            _ngcontent-serverapp-c92=""
+                                                                            id="firstNameInput" data-cy="firstNameInput"
+                                                                            type="text" formcontrolname="firstName"
+                                                                            class="input-control form-control-solid ng-untouched ng-pristine ng-invalid">
+                                                                        <div _ngcontent-serverapp-c92=""
+                                                                            class="valid-feedback">Looks good!</div>
+                                                                        <div _ngcontent-serverapp-c92=""
+                                                                            class="invalid-feedback">First name
+                                                                            required.</div><!---->
+                                                                    </div>
+                                                                </div>
+                                                                <div _ngcontent-serverapp-c92="" class="col-md-6">
+                                                                    <div _ngcontent-serverapp-c92="" class="mb-3"><label
+                                                                            _ngcontent-serverapp-c92=""
+                                                                            for="lastNameInput"
+                                                                            class="text-gray-600 small">Last
+                                                                            name</label><input
+                                                                            _ngcontent-serverapp-c92=""
+                                                                            id="lastNameInput" data-cy="lastNameInput"
+                                                                            type="text" formcontrolname="lastName"
+                                                                            class="input-control form-control-solid ng-untouched ng-pristine ng-invalid">
+                                                                        <div _ngcontent-serverapp-c92=""
+                                                                            class="valid-feedback">Looks good!</div>
+                                                                        <div _ngcontent-serverapp-c92=""
+                                                                            class="invalid-feedback">Last name required.
+                                                                        </div><!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div _ngcontent-serverapp-c92="" class="mb-3"><label
+                                                                    _ngcontent-serverapp-c92="" for="emailInput"
+                                                                    class="text-gray-600 small">Email
+                                                                    address</label><input _ngcontent-serverapp-c92=""
+                                                                    id="emailInput" data-cy="emailInput" type="email"
+                                                                    aria-describedby="emailHelp" formcontrolname="email"
+                                                                    class="input-control form-control-solid ng-untouched ng-pristine ng-invalid">
+                                                                <div _ngcontent-serverapp-c92="" class="valid-feedback">
+                                                                    Looks good!</div>
+                                                                <div _ngcontent-serverapp-c92=""
+                                                                    class="invalid-feedback">Email required.</div>
+                                                                <!----><!---->
+                                                            </div>
+                                                            <div _ngcontent-serverapp-c92="" class="row">
+                                                                <div _ngcontent-serverapp-c92="" class="col-md-6">
+                                                                    <div _ngcontent-serverapp-c92="" class="mb-3"><label
+                                                                            _ngcontent-serverapp-c92=""
+                                                                            for="passwordInput"
+                                                                            class="small text-muted">Password</label><input
+                                                                            _ngcontent-serverapp-c92=""
+                                                                            id="passwordInput" data-cy="passwordInput"
+                                                                            type="password" formcontrolname="password"
+                                                                            class="input-control form-control-solid ng-untouched ng-pristine ng-invalid">
+                                                                        <div _ngcontent-serverapp-c92=""
+                                                                            class="valid-feedback">Looks good!</div>
+                                                                        <div _ngcontent-serverapp-c92=""
+                                                                            class="invalid-feedback">Password required.
+                                                                        </div><!----><!---->
+                                                                    </div>
+                                                                </div>
+                                                                <div _ngcontent-serverapp-c92="" class="col-md-6">
+                                                                    <div _ngcontent-serverapp-c92="" class="mb-3"><label
+                                                                            _ngcontent-serverapp-c92=""
+                                                                            for="confirmPasswordInput"
+                                                                            class="text-gray-600 small">Confirm
+                                                                            Password</label><input
+                                                                            _ngcontent-serverapp-c92=""
+                                                                            id="confirmPasswordInput"
+                                                                            data-cy="confirmPasswordInput"
+                                                                            type="password"
+                                                                            formcontrolname="confirmPassword"
+                                                                            class="input-control form-control-solid ng-untouched ng-pristine ng-invalid">
+                                                                        <div _ngcontent-serverapp-c92=""
+                                                                            class="valid-feedback">Looks good!</div>
+                                                                        <div _ngcontent-serverapp-c92=""
+                                                                            class="invalid-feedback">Confirm Password
+                                                                            required.</div><!----><!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div _ngcontent-serverapp-c92=""
+                                                                class="mb-3 d-flex align-items-center justify-content-between">
+                                                                <div _ngcontent-serverapp-c92=""
+                                                                    class="form-check form-check-solid custom-checkbox">
+                                                                    <input _ngcontent-serverapp-c92=""
+                                                                        id="termsAndConditionsInput"
+                                                                        data-cy="termsAndConditionsInput"
+                                                                        type="checkbox"
+                                                                        formcontrolname="termsAndConditions"
+                                                                        class="form-check-input small ng-untouched ng-pristine ng-invalid"><label
+                                                                        _ngcontent-serverapp-c92=""
+                                                                        for="termsAndConditionsInput"
+                                                                        class="form-check-label">I accept the terms
+                                                                        &amp; conditions</label>
+                                                                    <div _ngcontent-serverapp-c92=""
+                                                                        class="invalid-feedback">You must accept the
+                                                                        terms &amp; conditions.</div><!---->
+                                                                </div><button _ngcontent-serverapp-c92=""
+                                                                    data-cy="registerButton" type="submit"
+                                                                    class="btn btn-primary"
+                                                                    disabled="">Register</button>
+                                                            </div>
+                                                        </form><!---->
+                                                        <p _ngcontent-serverapp-c92="" class="small pt-3">This site is
+                                                            protected by reCAPTCHA and the Google <a
+                                                                _ngcontent-serverapp-c92=""
+                                                                href="https://policies.google.com/privacy"
+                                                                target="_blank" rel="noreferrer">Privacy Policy </a>and
+                                                            <a _ngcontent-serverapp-c92=""
+                                                                href="https://policies.google.com/terms" target="_blank"
+                                                                rel="noreferrer">Terms of Service </a>apply.
+                                                        </p>
+                                                    </sbpro-register-form>
+                                                </div>
+                                                <div _ngcontent-serverapp-c93="" class="card-body px-5 py-4">
+                                                    <div _ngcontent-serverapp-c93="" class="small text-center">Have an
+                                                        account? <a _ngcontent-serverapp-c93="" routerlink="../login"
+                                                            href="/auth/login">Sign in!</a></div>
+                                                </div><!---->
+                                            </div>
+                                        </div><!----><!----><!---->
+                                    </sbpro-page-card></div>
+                            </div>
+                        </main>
+                    </div>
+                    <div _ngcontent-serverapp-c88="" id="layoutAuthentication_footer"><sbw-footer-auth
+                            _ngcontent-serverapp-c88="" _nghost-serverapp-c87="">
+                            <footer _ngcontent-serverapp-c87="" class="footer mt-auto footer-dark">
+                                <div _ngcontent-serverapp-c87="" class="container-fluid">
+                                    <div _ngcontent-serverapp-c87="" class="row">
+                                        <div _ngcontent-serverapp-c87="" class="col-md-6 small">Copyright © Start
+                                            Bootstrap LLC 2021</div>
+                                        <div _ngcontent-serverapp-c87="" class="col-md-6 text-md-end small"><a
+                                                _ngcontent-serverapp-c87="" routerlink="/privacy-policy"
+                                                href="/privacy-policy">Privacy Policy</a> · <a
+                                                _ngcontent-serverapp-c87="" routerlink="/terms-and-conditions"
+                                                href="/terms-and-conditions">Terms &amp; Conditions</a></div>
+                                    </div>
+                                </div>
+                            </footer>
+                        </sbw-footer-auth></div>
+                </div>
+            </sb-layout-auth></sbpro-register><!----></app-root>
+    <script src="runtime.78fe65772c8aff3e.js" type="module" crossorigin="anonymous"></script>
+    <script src="polyfills.f3824fe6dc0460ae.js" type="module" crossorigin="anonymous"></script>
+    <script src="scripts.cd816875f3dc91fb.js" defer="" crossorigin="anonymous"></script>
+    <script src="main.6700dedd9b90aef0.js" type="module" crossorigin="anonymous"></script>
+
+    <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"
+        data-ad-status="unfilled">
+        <div id="aswift_0_host"
+            style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;">
+            <iframe id="aswift_0" name="aswift_0" browsingtopics="true"
+                style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;"
+                sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true"
+                scrolling="no" allow="attribution-reporting; run-ad-auction"
+                src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5287323383309901&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;abgtt=6&amp;lmt=1733979777&amp;plaf=7%3A2&amp;plat=3%3A128%2C4%3A128%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fstartbootstrap.com%2Fauth%2Flogin&amp;pra=5&amp;wgl=1&amp;aihb=0&amp;asro=0&amp;ailel=1~2~4~6~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aiael=1~2~3~4~6~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aicel=33~38&amp;aifxl=29_18~30_19&amp;aiixl=29_5~30_6&amp;aiict=1&amp;aiapm=0.3221&amp;aiapmi=0.33938&amp;aiombap=1&amp;aief=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTMxLjAuMjkwMy44NiIsbnVsbCwwLG51bGwsIjY0IixbWyJNaWNyb3NvZnQgRWRnZSIsIjEzMS4wLjI5MDMuODYiXSxbIkNocm9taXVtIiwiMTMxLjAuNjc3OC4xMDkiXSxbIk5vdF9BIEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&amp;dt=1733979777716&amp;bpp=2&amp;bdt=107&amp;idt=24&amp;shv=r20241210&amp;mjsv=m202412040102&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D656807c8015b7583%3AT%3D1733903003%3ART%3D1733974606%3AS%3DALNI_MZivyHPzG3KPeSWlQE-pgfDz69YcA&amp;gpic=UID%3D00000f8a56c101ef%3AT%3D1733903003%3ART%3D1733974606%3AS%3DALNI_MYsWT4nyvl72Fd1zFt7I7wS92RYqw&amp;eo_id_str=ID%3D44ea042b718e56f6%3AT%3D1733903003%3ART%3D1733974606%3AS%3DAA-AfjZrrFXJFEM-sc4Tpgonmkk8&amp;nras=1&amp;correlator=1461780766908&amp;frm=20&amp;pv=2&amp;u_tz=540&amp;u_his=4&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1100&amp;bih=738&amp;scr_x=0&amp;scr_y=0&amp;eid=31089339%2C95347444%2C95345966%2C95347433%2C95348347%2C31061690&amp;oid=2&amp;pvsid=2899518642241587&amp;tmod=564309626&amp;wsm=1&amp;uas=0&amp;nvt=2&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C816%2C1100%2C738&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=1.4&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=37"
+                data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement"
+                data-load-complete="true"></iframe>
+        </div>
+    </ins><iframe name="googlefcPresent"
+        style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><ins
+        class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done"
+        style="display: block; width: 100% !important; height: 95px !important; bottom: -90px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;"
+        data-anchor-status="dismissed" data-ad-status="filled" data-anchor-shown="true">
+        <div class="grippy-host"></div>
+        <div id="aswift_2_host"
+            style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">
+            <iframe id="aswift_2" name="aswift_2" browsingtopics="true"
+                style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;"
+                sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+                allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction"
+                src="https://googleads.g.doubleclick.net/pagead/html/r20241210/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-5287323383309901&amp;fa=1&amp;ifi=3&amp;uci=a!3&amp;btvi=1"
+                data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement"
+                data-google-query-id="CJeW34W6oYoDFatfDwIdFY05vA" data-load-complete="true"></iframe>
+        </div>
+    </ins>
+    <div>
+        <div class="grecaptcha-badge" data-style="bottomright"
+            style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+            <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation"
+                    name="a-vv5nhqu1bbfb" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdsldUZAAAAAFavGw6UEqjhXW2dfa3gXXVg46Za&amp;co=aHR0cHM6Ly9zdGFydGJvb3RzdHJhcC5jb206NDQz&amp;hl=ko&amp;v=pPK749sccDmVW_9DSeTMVvh2&amp;size=invisible&amp;cb=14wqt41jijf8"></iframe>
+            </div>
+            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+                class="g-recaptcha-response"
+                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+        </div><iframe style="display: none;"></iframe>
+    </div><iframe name="__tcfapiLocator" src="about:blank"
+        style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe
+        name="googlefcInactive" src="about:blank"
+        style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe
+        name="googlefcLoaded" src="about:blank"
+        style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe
+        allow="join-ad-interest-group" data-tagging-id="G-PZXV45BPZN" data-load-time="1733980285783" height="0"
+        width="0"
+        src="https://td.doubleclick.net/td/ga/rul?tid=G-PZXV45BPZN&amp;gacid=1629436777.1733903004&amp;gtm=45je4cb0v887308581za200&amp;dma=0&amp;gcd=13l3l3l3l1l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=101925629~102067555~102067808~102081485&amp;z=1110366285"
+        style="display: none; visibility: hidden;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe"
+        width="0" height="0" style="display: none;"></iframe>
+</body>
+
+</html>

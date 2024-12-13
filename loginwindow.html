@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoginPage</title>
+<link rel="stylesheet" type="text/css" href="./login.css" />
+<head>
+
+   
+</head>
+
+<body aria-hidden="false" style="padding: 0px;">
+    <app-root _nghost-serverapp-c107="" ng-version="15.2.5"><sbpro-toast-view _ngcontent-serverapp-c107=""
+            aria-live="polite" aria-atomic="true" class="ngb-toasts"
+            _nghost-serverapp-c45=""><!----></sbpro-toast-view><sbw-overlay _ngcontent-serverapp-c107=""
+            _nghost-serverapp-c106=""><!----></sbw-overlay><router-outlet
+            _ngcontent-serverapp-c107=""></router-outlet><sb-login _nghost-serverapp-c91=""><sb-layout-auth
+                _ngcontent-serverapp-c91="" class="bg-primary" _nghost-serverapp-c88="">
+                <div _ngcontent-serverapp-c88="" id="layoutAuthentication" class="bg-primary">
+                    <div _ngcontent-serverapp-c88="" id="layoutAuthentication_content">
+                        <main _ngcontent-serverapp-c88="">
+                            <div _ngcontent-serverapp-c91="" class="container">
+                                <div _ngcontent-serverapp-c91="" class="row justify-content-center"><sbpro-page-card
+                                        _ngcontent-serverapp-c91="" size="large" _nghost-serverapp-c33=""><!----><!---->
+                                        <div _ngcontent-serverapp-c33="" class="col-xl-10 col-lg-12">
+                                            <div _ngcontent-serverapp-c33="" class="main-card">
+                                                <div _ngcontent-serverapp-c91="" class="card-body">
+                                                    <a _ngcontent-serverapp-c91="" routerlink="/"
+                                                        class="card-body-inline" href="/"><img
+                                                            _ngcontent-serverapp-c91=""
+                                                            src="data:image/png;base64,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"
+                                                            style="height: 7rem; width: 7rem;"></a>
+                                                    <div _ngcontent-serverapp-c91="" class="signup-content">
+                                                        <div _ngcontent-serverapp-c91="" class="col-xl-8 col-lg-9 mb-4">
+                                                            <h2 _ngcontent-serverapp-c91="">Sign up on Start Bootstrap
+                                                            </h2>
+                                                            <p _ngcontent-serverapp-c91="" class="mb-0">Join our
+                                                                community of designers and developers and manage your
+                                                                purchases, favorite themes and snippets, comments, and
+                                                                more!</p>
+                                                        </div>
+                                                    </div><sbpro-brand-login _ngcontent-serverapp-c91=""
+                                                        _nghost-serverapp-c89=""><button _ngcontent-serverapp-c89=""
+                                                            data-cy="socialLoginTwitter"
+                                                            class="btn btn-twitter btn-auth"><fa-icon
+                                                                _ngcontent-serverapp-c89="" size="sm"
+                                                                class="ng-fa-icon me-1"><svg role="img"
+                                                                    aria-hidden="true" focusable="false"
+                                                                    data-prefix="fab" data-icon="twitter"
+                                                                    class="svg-inline--fa fa-twitter fa-fw fa-sm"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 512 512">
+                                                                    <path fill="currentColor"
+                                                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                                    </path>
+                                                                </svg></fa-icon>Log in with Twitter</button><button
+                                                            _ngcontent-serverapp-c89="" data-cy="socialLoginFacebook"
+                                                            class="btn btn-facebook btn-auth"><fa-icon
+                                                                _ngcontent-serverapp-c89="" size="sm"
+                                                                class="ng-fa-icon me-1"><svg role="img"
+                                                                    aria-hidden="true" focusable="false"
+                                                                    data-prefix="fab" data-icon="facebook-f"
+                                                                    class="svg-inline--fa fa-facebook-f fa-fw fa-sm"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 320 512">
+                                                                    <path fill="currentColor"
+                                                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                                    </path>
+                                                                </svg></fa-icon>Log in with Facebook</button><button
+                                                            _ngcontent-serverapp-c89="" data-cy="socialLoginGoogle"
+                                                            class="btn btn-google btn-auth"><fa-icon
+                                                                _ngcontent-serverapp-c89="" size="sm"
+                                                                class="ng-fa-icon me-1"><svg role="img"
+                                                                    aria-hidden="true" focusable="false"
+                                                                    data-prefix="fab" data-icon="google"
+                                                                    class="svg-inline--fa fa-google fa-fw fa-sm"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 488 512">
+                                                                    <path fill="currentColor"
+                                                                        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+                                                                    </path>
+                                                                </svg></fa-icon>Log in with Google</button><button
+                                                            _ngcontent-serverapp-c89="" data-cy="socialLoginGithub"
+                                                            class="btn btn-github btn-auth"><fa-icon
+                                                                _ngcontent-serverapp-c89="" size="sm"
+                                                                class="ng-fa-icon me-1"><svg role="img"
+                                                                    aria-hidden="true" focusable="false"
+                                                                    data-prefix="fab" data-icon="github"
+                                                                    class="svg-inline--fa fa-github fa-fw fa-sm"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 496 512">
+                                                                    <path fill="currentColor"
+                                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                    </path>
+                                                                </svg></fa-icon>Log in with
+                                                            GitHub</button></sbpro-brand-login>
+                                                </div>
+                                                <hr _ngcontent-serverapp-c91="" class="my-0">
+                                                <div _ngcontent-serverapp-c91="" toastcontainer=""></div>
+                                                <div _ngcontent-serverapp-c91="" class="card-body under">
+                                                    <div _ngcontent-serverapp-c91="" class="row justify-content-center">
+                                                        <div _ngcontent-serverapp-c91="" class="col-xl-8 col-lg-9">
+                                                            <sbpro-login-form _ngcontent-serverapp-c91=""
+                                                                _nghost-serverapp-c90=""><!----><!----><!---->
+                                                                <form _ngcontent-serverapp-c90="" novalidate=""
+                                                                    class="ng-untouched ng-pristine ng-invalid">
+                                                                    <div _ngcontent-serverapp-c90="" class="mb-3"><label
+                                                                            _ngcontent-serverapp-c90="" for="emailInput"
+                                                                            class="text-gray-600 small">Email
+                                                                            address</label><input
+                                                                            _ngcontent-serverapp-c90="" id="emailInput"
+                                                                            data-cy="emailInput" type="email"
+                                                                            aria-describedby="emailHelp"
+                                                                            formcontrolname="email"
+                                                                            class="input-control form-control-solid ng-untouched ng-pristine ng-invalid">
+                                                                        <div _ngcontent-serverapp-c90=""
+                                                                            class="invalid-feedback">Email required.
+                                                                        </div><!----><!---->
+                                                                    </div>
+                                                                    <div _ngcontent-serverapp-c90="" class="mb-3"><label
+                                                                            _ngcontent-serverapp-c90=""
+                                                                            for="passwordInput"
+                                                                            class="small text-gray-600">Password</label><input
+                                                                            _ngcontent-serverapp-c90=""
+                                                                            id="passwordInput" data-cy="passwordInput"
+                                                                            type="password" formcontrolname="password"
+                                                                            class="input-control form-control-solid ng-untouched ng-pristine ng-invalid">
+                                                                        <div _ngcontent-serverapp-c90=""
+                                                                            class="invalid-feedback">Password required.
+                                                                        </div><!----><!---->
+                                                                    </div>
+                                                                    <div _ngcontent-serverapp-c90="" class="mb-3">
+                                                                        <a _ngcontent-serverapp-c90=""
+                                                                            routerlink="/auth/password-reset-request"
+                                                                            href="/auth/password-reset-request">Forgot
+                                                                            your password?</a>
+                                                                    </div>
+                                                                    <div _ngcontent-serverapp-c90=""
+                                                                        class="mb-3 d-flex align-items-center justify-content-between">
+                                                                        <div _ngcontent-serverapp-c90=""
+                                                                            class="form-check form-check-solid custom-checkbox">
+                                                                            <input _ngcontent-serverapp-c90=""
+                                                                                id="checkInput" data-cy="checkInput"
+                                                                                type="checkbox"
+                                                                                formcontrolname="checkbox"
+                                                                                class="form-check-input small ng-untouched ng-pristine ng-valid"><label
+                                                                                _ngcontent-serverapp-c90=""
+                                                                                for="checkInput"
+                                                                                class="form-check-label">Remember
+                                                                                password</label>
+                                                                        </div><button _ngcontent-serverapp-c90=""
+                                                                            data-cy="loginButton" type="submit"
+                                                                            class="btn btn-primary"
+                                                                            disabled="">Login</button>
+                                                                    </div>
+                                                                </form>
+                                                                <p _ngcontent-serverapp-c90="" class="small pt-3">This
+                                                                    site is protected by reCAPTCHA and the Google
+                                                                    <a _ngcontent-serverapp-c90=""
+                                                                        href="https://policies.google.com/privacy"
+                                                                        target="_blank" rel="noreferrer">Privacy Policy
+                                                                    </a>and <a
+                                                                        _ngcontent-serverapp-c90=""
+                                                                        href="https://policies.google.com/terms"
+                                                                        target="_blank" rel="noreferrer">Terms of
+                                                                        Service </a>apply.
+                                                                </p><!----><!---->
+                                                            </sbpro-login-form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr _ngcontent-serverapp-c91="" class="my-0">
+                                                <div _ngcontent-serverapp-c91="" class="card-body px-5 py-4">
+                                                    <div _ngcontent-serverapp-c91="" class="small text-center">New user?
+                                                        <a _ngcontent-serverapp-c91="" routerlink="../register"
+                                                            href="/auth/register">Create an account!</a>
+                                                    </div>
+                                                </div><!---->
+                                            </div>
+                                        </div><!----><!----><!---->
+                                    </sbpro-page-card></div>
+                            </div>
+                        </main>
+                    </div>
+                    <div _ngcontent-serverapp-c88="" id="layoutAuthentication_footer"><sbw-footer-auth
+                            _ngcontent-serverapp-c88="" _nghost-serverapp-c87="">
+                            <footer _ngcontent-serverapp-c87="" class="footer mt-auto footer-dark">
+                                <div _ngcontent-serverapp-c87="" class="container-fluid">
+                                    <div _ngcontent-serverapp-c87="" class="row">
+                                        <div _ngcontent-serverapp-c87="" class="col-md-6 small">Copyright © Start
+                                            Bootstrap LLC 2021</div>
+                                        <div _ngcontent-serverapp-c87="" class="col-md-6 text-md-end small">
+                                            <a _ngcontent-serverapp-c87="" routerlink="/privacy-policy"
+                                                href="/privacy-policy">Privacy Policya · <a
+                                                    _ngcontent-serverapp-c87="" routerlink="/terms-and-conditions"
+                                                    href="/terms-and-conditions">Terms &amp; Conditions</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                        </sbw-footer-auth></div>
+                </div>
+            </sb-layout-auth></sb-login><!----></app-root>
+</body>
