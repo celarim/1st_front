@@ -629,12 +629,32 @@
   }
   @media screen and (max-width:1043) {
     .section-second{
-
       flex-grow:2;
     }
   }
 
-  
+  /* 댓글 폼 */
+  .commentbox {
+    display:inline-flex;
+    padding:2em 0;
+  }
+
+  input[name="comment"] {
+    border: 1px solid #2d4373;
+    border-radius: 0.3em;
+    width: 90%;
+    height: 4rem;
+  }
+
+  input[value="submit"] {
+    border: 1px solid #2d4373;
+    background-color:#2d4373;
+    border-radius: 0.3em;
+    width: 10%;
+    height: 4rem;
+    color:white;
+
+  }
 
 
   /* 이게 컨테이너의 전체 레이아웃을 해칠 수 있는 핵심 셀렉터 */
