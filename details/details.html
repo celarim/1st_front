@@ -19,7 +19,11 @@
 
     <!-- Custom styles for this template-->
     <link href="details.css" rel="stylesheet">
-
+    <link href="header.css" rel="stylesheet">
+    <link href="widget.css" rel="stylesheet">
+    <link href="cards.css" rel="stylesheet">
+    <link href="reply.css" rel="stylesheet">
+    <link href="section.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -66,6 +70,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
+                            
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
                                 aria-labelledby="searchDropdown">
@@ -175,22 +180,22 @@
 <!-- 페이지 시작 -->                
                 <!-- Begin Page Content -->
                 <div class="mainpage">
-                    <div class="stock-graph" style="display:block;">
-                        <!-- TODO: 임시로 이미지를 이 주석 자리에 배치할 것-->
-                    </div>
                     <div class="container-fluid" style="display:block;">
 
                         <!-- Page Heading -->
-                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <div class="shrink-title d-sm-flex align-items-center justify-content-between mb-4">
                             <h1 class="h3 mb-0 text-gray-800">콜라중독</h1>
                             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                    class="fas fa-download fa-sm text-white-50"></i>시뮬레이션하기</a>
+                                class="fas fa-download fa-sm text-white-50"></i>북마크</a>
                         </div>
+                        <!--
+                        
+                        -->
                         <!-- Content Row -->
                         <div class="row-wrapper">  
                             <div class="row">
                                 <!-- Initial Fortfolio Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="col-xl-3">
                                     <div class="card border-left-primary shadow h-100 py-2">
                                         <div class="card-body">
                                             <div class="row-card no-gutters align-items-center">
@@ -208,7 +213,7 @@
                                 </div>
 
                                 <!-- Current Fortfolio Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="col-xl-3">
                                     <div class="card border-left-success shadow h-100 py-2">
                                         <div class="card-body">
                                             <div class="row-card no-gutters align-items-center">
@@ -226,28 +231,28 @@
                                 </div>
 
                                 <!-- Profit Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="col-xl-3">
                                     <div class="card border-left-info shadow h-100 py-2">
                                         <div class="card-body">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Profit rate
-                                                    </div>
                                                     <div class="row-card no-gutters align-items-center">
+                                        
                                                         <div class="col-auto">
+                                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Profit rate
+                                                            </div>
                                                             <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">+112.5%</div>
-                                                        </div>
-                                                        <div class="col">
                                                             <div class="progress progress-sm mr-2">
                                                                 <div class="progress-bar bg-info" role="progressbar"
                                                                     style="width: 4rem;" aria-valuenow="50" aria-valuemin="0"
                                                                     aria-valuemax="100"></div>
                                                             </div>
                                                         </div>
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                
                                                 </div>
                                             </div>
                                         </div>
@@ -255,7 +260,7 @@
                                 </div>
 
                                 <!-- Ratings Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="col-xl-3">
                                     <div class="card border-left-warning shadow h-100 py-2">
                                         <div class="card-body">
                                             <div class="row-card no-gutters align-items-center">
@@ -274,107 +279,156 @@
                             </div>
                         </div>  
                     </div>
-                    <!-- /.container-fluid -->
-                    <!-- Pie Chart -->
-                    <div class="pie-chart-wrapper">
-                        <div class="pie-chart shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div
-                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">콜라중독</h6>
-                                <div class="dropdown no-arrow">
-                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                        aria-labelledby="dropdownMenuLink">
-                                        <div class="dropdown-header">Dropdown Header:</div>
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
+                </div>
+                <!-- /.container-fluid -->
+                <!-- Pie Chart -->
+                <div class="chart-wrapper"><!-- 래핑용 -->
+                    <div class="pie-chart shadow col-lg-6 mb-4">
+                        <div
+                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">포트폴리오</h6>
+                            <div class="dropdown no-arrow">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <div class="dropdown-header">Dropdown Header:</div>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
                             </div>
-                            <!-- Card Body -->
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="chart-pie pt-4 pb-2">
+                                <canvas id="myPieChart"></canvas>
+                            </div>
+                            <div class="mt-4 text-center small">
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-primary"></i> Coca-cola
+                                </span>
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-success"></i> Pepsi
+                                </span>
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-info"></i> Keurig Dr pepper
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                            </div>
                             <div class="card-body">
-                                <div class="chart-pie pt-4 pb-2">
-                                    <canvas id="myPieChart"></canvas>
+                                <h4 class="small font-weight-bold">Server Migration <span
+                                        class="float-right">20%</span></h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="mt-4 text-center small">
-                                    <span class="mr-2">
-                                        <i class="fas fa-circle text-primary"></i> Coca-cola
-                                    </span>
-                                    <span class="mr-2">
-                                        <i class="fas fa-circle text-success"></i> Pepsi
-                                    </span>
-                                    <span class="mr-2">
-                                        <i class="fas fa-circle text-info"></i> Dr pepper
-                                    </span>
+                                <h4 class="small font-weight-bold">Sales Tracking <span
+                                        class="float-right">40%</span></h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h4 class="small font-weight-bold">Customer Database <span
+                                        class="float-right">60%</span></h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%"
+                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h4 class="small font-weight-bold">Payout Details <span
+                                        class="float-right">80%</span></h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h4 class="small font-weight-bold">Account Setup <span
+                                        class="float-right">Complete!</span></h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Pie chart end-->
-                    <!-- Reply -->
-                    <div class="reply-section-title">댓글</div>
-                    <div class="reply">
-                        <!-- Approach -->
-                        <div class="replycard shadow mb-4">
-                            <div class="replycard-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">홍길동</h6>
-                                <p class="replycard-info">작성일자: 2024-12-12<br>
-                                최종 수정일자: 2024-12-12</p>
-                                <form method="POST">
-                                    <input type="button" name="reply_likes" value="좋아요" class="reply_likes" />
-                                </form>
-                            </div>
-                            <div class="replycard-body">
-                                <p>나도 주워야지</p>
-                            </div>
+                </div><!-- 래핑용 -->
+<!-- *****************************여기까지가 2번째 줄줄**********************  -->
+                <div class="chart-wrapper">
+                    <div class="chart">
+                        <!-- TODO: 차트로 아래 그림 대체체 -->
+                        <img src="img/chart_mock.png" width=720 height=360 />
+                    </div>    
+                </div>
+                <!-- Reply -->
+                <div class="reply">
+                    <div class="reply-section-title">
+                        댓글
+                    </div>
+                    <!-- input -->
+                    <form method="POST">
+                        
+                    </form>
+                    <!-- Approach -->
+                    <div class="replycard shadow mb-4">
+                        <div class="replycard-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">홍길동</h6>
+                            <p class="replycard-info">작성일자: 2024-12-12<br>
+                            최종 수정일자: 2024-12-12</p>
+                            <form method="POST">
+                                <input type="button" name="reply_likes" value="좋아요" class="reply_likes" />
+                            </form>
                         </div>
-                        <div class="replycard shadow mb-4">
-                            <div class="replycard-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">익명맨</h6>
-                                <p class="replycard-info">작성일자: 2024-12-12<br>
-                                최종 수정일자: 2024-12-13</p>
-                                <form method="POST">
-                                    <input type="button" name="reply_likes" value="좋아요" class="reply_likes" />
-                                </form>
-                            </div>
-                            <div class="replycard-body">
-                                <p>콜라에 미친 광기 ㄷㄷㄷ</p>
-                            </div>
+                        <div class="replycard-body">
+                            <p>나도 주워야지</p>
                         </div>
-                        <div class="replycard shadow mb-4">
-                            <div class="replycard-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">으아악악</h6>
-                                <p class="replycard-info">작성일자: 2024-12-13<br>최종 수정일자: 2024-12-13</p>
-                                <form method="POST">
-                                    <input type="button" name="reply_likes" value="좋아요" class="reply_likes" />
-                                </form>
-                            </div>
-                            <div class="replycard-body">
-                                <p>그래도 스테디셀러라 수익률이 좋은가?</p>
-                            </div>
+                    </div>
+                    <div class="replycard shadow mb-4">
+                        <div class="replycard-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">익명맨</h6>
+                            <p class="replycard-info">작성일자: 2024-12-12<br>
+                            최종 수정일자: 2024-12-13</p>
+                            <form method="POST">
+                                <input type="button" name="reply_likes" value="좋아요" class="reply_likes" />
+                            </form>
+                        </div>
+                        <div class="replycard-body">
+                            <p>콜라에 미친 광기 ㄷㄷㄷ</p>
+                        </div>
+                    </div>
+                    <div class="replycard shadow mb-4">
+                        <div class="replycard-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">으아악악</h6>
+                            <p class="replycard-info">작성일자: 2024-12-13<br>최종 수정일자: 2024-12-13</p>
+                            <form method="POST">
+                                <input type="button" name="reply_likes" value="좋아요" class="reply_likes" />
+                            </form>
+                        </div>
+                        <div class="replycard-body">
+                            <p>그래도 스테디셀러라 수익률이 좋은가?</p>
                         </div>
                     </div>
                 </div>
+                <!-- End of Main Content -->
 
-
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Across the Pacific 2025</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer -->
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Across the Pacific 2025</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+            
 
         </div>
         <!-- End of Content Wrapper -->
