@@ -3,16 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="p_create.css">
+    <title>Stock Input Form</title>
+    <link rel="stylesheet" href="./p_create.css">
 </head>
 <body>
-    <div class="stock_select">
-        <div class="select_detail">
-            <div class="stock_name">이름</div>
-            <div class="stock_quantity">수량</div>
-            <div class="order_at">날짜</div>
+    <div class="page-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h2>새로운 콘텐츠 추가</h2>
+            <p>여기에 새로운 내용을 추가하세요.</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Field Labels Row -->
+            <div class="field-labels">
+                <div class="field-label stock-name-label">Stock</div>
+                <div class="field-label quantity-label">Quantity</div>
+                <div class="field-label date-label">Date</div>
+                <div class="field-label add-lab"></div> <!-- Add 버튼 자리 -->
+            </div>
+
+            <!-- Field Inputs Row -->
+            <div id="field-wrapper">
+                <!-- Initial Field Container -->
+                <div class="field-container">
+                    <div class="field-input stock-name-input">
+                        <input type="text" placeholder="Enter stock name" />
+                    </div>
+                    <div class="field-input quantity-input">
+                        <input type="number" placeholder="0" />
+                    </div>
+                    <div class="field-input date-input">
+                        <button class="date-button">
+                            <img src="./img/calendar.svg" alt="Calendar" />
+                        </button>
+                        <input type="date" class="hidden-date-picker" />
+                    </div>
+                    <!-- Add Button -->
+                    <div class="field-input add-field">
+                        <button class="add-field-button" id="add-field-button" type="button">+</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        // Add Field Functionality
+        let fieldCount = 1;
+
+        document.getElementById('add-field-button').addEventListener('click', function () {
+            const fieldWrapper = document.getElementById('field-wrapper');
+            const newFieldContainer = document.createElement('div');
+            newFieldContainer.className = 'field-container';
+
+            newFieldContainer.innerHTML = `
+                <div class="field-input stock-name-input">
+                    <input type="text" placeholder="Enter stock name" />
+                </div>
+                <div class="field-input quantity-input">
+                    <input type="number" placeholder="0" />
+                </div>
+                <div class="field-input date-input">
+                    <button class="date-button">
+                        <img src="./img/calendar.svg" alt="Calendar" />
+                    </button>
+                    <input type="date" class="hidden-date-picker" />
+                </div>
+                <div class="field-input add-field"></div>
+            `;
+
+            fieldWrapper.appendChild(newFieldContainer);
+            newFieldContainer.querySelector('.add-field').appendChild(this);
+
+            fieldCount++;
+        });
+
+        // Date Picker Visibility Toggle
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.date-button')) {
+                const dateInput = e.target.closest('.date-input').querySelector('.hidden-date-picker');
+                dateInput.click();
+            }
+        });
+    </script>
 </body>
 </html>

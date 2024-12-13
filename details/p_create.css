@@ -1,0 +1,144 @@
+/* 전체 페이지 레이아웃 */
+.page-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* 왼쪽 섹션 */
+.left-section {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 오른쪽 섹션 */
+.right-section {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Field Labels */
+.field-labels {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: space-between; /* 라벨 간 간격 균일 */
+}
+
+/* Input Rows */
+#field-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; /* 각 필드 사이 간격 */
+}
+
+/* Field Row Container */
+.field-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center; /* 각 요소 수직 정렬 */
+    width: 100%; /* 고정 너비 유지 */
+    height: 40px; /* 라벨과 입력 필드의 높이를 동일하게 설정 */
+}
+
+/* Field Labels and Inputs Alignment */
+.field-label, .field-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* 입력 필드와 같은 높이 */
+}
+
+/* Stock Name Input */
+.stock-name-label {
+    flex: 2;
+    text-align: center;
+}
+.stock-name-input {
+    flex: 2;
+}
+
+/* Quantity Input */
+.quantity-label {
+    flex: 0.5;
+    text-align: center;
+}
+.quantity-input {
+    width: 40px;
+    /* flex: 0.5; */
+    text-align: center;
+}
+
+/* Date Input */
+.date-label {
+    flex: 1;
+    text-align: center;
+}
+.date-input {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Input Fields */
+.field-input input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+/* Date Picker Hidden */
+.hidden-date-picker {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Calendar Icon Button */
+.date-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.date-button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Add Button */
+.add-field-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4e73df;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-field-button:hover {
+    background-color: #375a7f;
+}
