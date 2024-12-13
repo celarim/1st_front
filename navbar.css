@@ -1,0 +1,532 @@
+
+  /* 기본설정 */
+  :root {
+    --bs-gray: #69707a;
+    --bs-gray-dark: #363d47;
+    --bs-gray-100: #f2f6fc;
+    --bs-gray-200: #e0e5ec;
+    --bs-gray-300: #d4dae3;
+    --bs-gray-400: #c5ccd6;
+    --bs-gray-500: #a7aeb8;
+    --bs-gray-600: #69707a;
+    --bs-gray-700: #4a515b;
+    --bs-gray-800: #363d47;
+    --bs-gray-900: #212832;
+    --bs-primary: #dc392d;
+    --bs-secondary: #e0e5ec;
+    --bs-success: #00ac69;
+    --bs-info: #00cfd5;
+    --bs-warning: #f4a100;
+    --bs-danger: #e81500;
+    --bs-light: #f2f6fc;
+    --bs-dark: #212832;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-red: #dc392d;
+    --bs-orange: #f76400;
+    --bs-yellow: #f4a100;
+    --bs-green: #00ac69;
+    --bs-teal: #00ba94;
+    --bs-cyan: #00cfd5;
+    --bs-blue: #0061f2;
+    --bs-indigo: #5800e8;
+    --bs-purple: #6900c7;
+    --bs-pink: #e30059;
+    --bs-red-soft: #f0e3e7;
+    --bs-orange-soft: #f3e7e3;
+    --bs-yellow-soft: #f2eee3;
+    --bs-green-soft: #daefed;
+    --bs-teal-soft: #daf0f2;
+    --bs-cyan-soft: #daf2f8;
+    --bs-blue-soft: #dae7fb;
+    --bs-indigo-soft: #e3ddfa;
+    --bs-purple-soft: #e4ddf7;
+    --bs-pink-soft: #f1ddec;
+    --bs-primary-soft: #f0e3e7;
+    --bs-secondary-soft: #f0f4fa;
+    --bs-success-soft: #daefed;
+    --bs-info-soft: #daf2f8;
+    --bs-warning-soft: #f2eee3;
+    --bs-danger-soft: #f1e0e3;
+    --bs-primary-rgb: 220, 57, 45;
+    --bs-secondary-rgb: 224, 229, 236;
+    --bs-success-rgb: 0, 172, 105;
+    --bs-info-rgb: 0, 207, 213;
+    --bs-warning-rgb: 244, 161, 0;
+    --bs-danger-rgb: 232, 21, 0;
+    --bs-light-rgb: 242, 246, 252;
+    --bs-dark-rgb: 33, 40, 50;
+    --bs-red-rgb: 220, 57, 45;
+    --bs-orange-rgb: 247, 100, 0;
+    --bs-yellow-rgb: 244, 161, 0;
+    --bs-green-rgb: 0, 172, 105;
+    --bs-teal-rgb: 0, 186, 148;
+    --bs-cyan-rgb: 0, 207, 213;
+    --bs-blue-rgb: 0, 97, 242;
+    --bs-indigo-rgb: 88, 0, 232;
+    --bs-purple-rgb: 105, 0, 199;
+    --bs-pink-rgb: 227, 0, 89;
+    --bs-red-soft-rgb: 240, 227, 231;
+    --bs-orange-soft-rgb: 243, 231, 227;
+    --bs-yellow-soft-rgb: 242, 238, 227;
+    --bs-green-soft-rgb: 218, 239, 237;
+    --bs-teal-soft-rgb: 218, 240, 242;
+    --bs-cyan-soft-rgb: 218, 242, 248;
+    --bs-blue-soft-rgb: 218, 231, 251;
+    --bs-indigo-soft-rgb: 227, 221, 250;
+    --bs-purple-soft-rgb: 228, 221, 247;
+    --bs-pink-soft-rgb: 241, 221, 236;
+    --bs-primary-soft-rgb: 240, 227, 231;
+    --bs-secondary-soft-rgb: 240, 244, 250;
+    --bs-success-soft-rgb: 218, 239, 237;
+    --bs-info-soft-rgb: 218, 242, 248;
+    --bs-warning-soft-rgb: 242, 238, 227;
+    --bs-danger-soft-rgb: 241, 224, 227;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 105, 112, 122;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #69707a;
+    --bs-body-bg: #fff;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #e0e5ec;
+    --bs-border-color-translucent: rgba(0, 0, 0, .175);
+    --bs-border-radius: .35rem;
+    --bs-border-radius-sm: .25rem;
+    --bs-border-radius-lg: .5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #dc392d;
+    --bs-link-hover-color: #b02e24;
+    --bs-code-color: #e30059;
+    --bs-highlight-bg: #fdeccc;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+:root, :host {
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Solid";
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Regular";
+    --fa-font-light: normal 300 1em / 1 "Font Awesome 6 Light";
+    --fa-font-thin: normal 100 1em / 1 "Font Awesome 6 Thin";
+    --fa-font-duotone: normal 900 1em / 1 "Font Awesome 6 Duotone";
+    --fa-font-sharp-solid: normal 900 1em / 1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-regular: normal 400 1em / 1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-light: normal 300 1em / 1 "Font Awesome 6 Sharp";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
+
+
+
+.align-self-center {
+    align-self: center!important
+}
+
+  /* 기본설정 끝 */
+   /*이미지 크기 */
+nav img {
+    height: 3.5rem !important
+}
+nav img, nav svg {
+    vertical-align: middle
+}
+fa-icon svg {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em
+}
+
+/* 네비게이션 바 */
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: .5rem;
+    --bs-navbar-color: rgba(0, 0, 0, .55);
+    --bs-navbar-hover-color: rgba(0, 0, 0, .7);
+    --bs-navbar-disabled-color: rgba(0, 0, 0, .3);
+    --bs-navbar-active-color: rgba(0, 0, 0, .9);
+    --bs-navbar-brand-padding-y: .3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(0, 0, 0, .9);
+    --bs-navbar-brand-hover-color: rgba(0, 0, 0, .9);
+    --bs-navbar-nav-link-padding-x: .5rem;
+    --bs-navbar-toggler-padding-y: .25rem;
+    --bs-navbar-toggler-padding-x: .75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, .1);
+    --bs-navbar-toggler-border-radius: .35rem;
+    --bs-navbar-toggler-focus-width: .2rem;
+    --bs-navbar-toggler-transition: box-shadow .15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: .5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.bg-white {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+.navbar-marketing.fixed-top, .nav-fixed .navbar-marketing.topnav, .nav-fixed #layoutSidenav .navbar-marketing#layoutSidenav_nav {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.navbar-marketing {
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
+}
+.shadow {
+    box-shadow: 0 .15rem 1.75rem #21283226 !important;
+}
+.fixed-top, .nav-fixed #layoutSidenav #layoutSidenav_nav, .nav-fixed .topnav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/* 컨테이너 */
+.navbar>.nav-container, .navbar>.nav-container-fluid, .navbar>.nav-container-xl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container, .nav-container-fluid, .nav-container-xl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+/* 컨테이너 */
+
+/* 로고 */
+.text-black {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+}
+a {
+    text-decoration: none;
+}
+.ms-2 {
+    margin-left: .5rem !important;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    white-space: nowrap;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+}
+/*작을때 펼치기 버튼*/
+.navbar-marketing .navbar-toggler {
+    padding: .5rem;
+    border: 0;
+}
+
+
+/*작을때 펼치기 버튼 끝*/
+
+
+
+
+/* 헤더 */
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+.me-auto {
+    margin-right: auto !important;
+}
+
+/* 헤더끝 */
+
+
+
+/* 내비게이션 바 요소들들 */
+.navbar-marketing .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+}
+.navbar-marketing .navbar-nav {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #69707a !important;
+}
+.navbar-marketing .nav-link {
+    font-size: .9rem;
+    width: 100%;
+}
+.pointer {
+    cursor: pointer !important;
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.dropdown .dropdown-toggle .dropdown-arrow {
+    margin-left: .4rem;
+    margin-right: 0;
+    transition: transform .1s ease-in-out;
+    font-size: .6em;
+}
+/* 요소 끝 */
+/* 오른쪽 요소들 */
+.nav-right {
+    padding-top: 0;
+    padding-bottom: 1.75rem;
+}
+/* 로그인 버튼 */
+.navbar .btn {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    height: 2.2rem;
+    font-size: .75rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: normal;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+.btn {
+    --bs-btn-padding-x: 1.125rem;
+    --bs-btn-padding-y: .875rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: .875rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1;
+    --bs-btn-color: #69707a;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: .35rem;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+    --bs-btn-disabled-opacity: .65;
+    --bs-btn-focus-box-shadow: 0 0 0 .2rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #4f74df;
+    --bs-btn-border-color: #4f74df;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb3026;
+    --bs-btn-hover-border-color: #b02e24;
+    --bs-btn-focus-shadow-rgb: 225, 87, 77;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b02e24;
+    --bs-btn-active-border-color: #a52b22;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #dc392d;
+    --bs-btn-disabled-border-color: #dc392d;
+}
+/* min-width */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important
+;
+        flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .nav-right {
+        padding-top: 1.75rem;
+    }
+    .navbar-marketing {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .navbar-marketing .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+    .mb-lg-0 {
+        margin-bottom: 0 !important;
+    }
+}
+/*컨테이너 min width*/
+@media (min-width: 576px) {
+    .nav-container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .nav-container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .nav-container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .nav-container-xl,.nav-container {
+        max-width:1140px
+    }
+}
+
+@media (min-width: 1500px) {
+    .nav-container-xl,.nav-container {
+        max-width:1440px
+    }
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+/* 드롭다운 메뉴 */
+.dropdown-menu {
+    --bs-dropdown-zindex: 1000;
+    --bs-dropdown-min-width: 10rem;
+    --bs-dropdown-padding-x: 0;
+    --bs-dropdown-padding-y: .5rem;
+    --bs-dropdown-spacer: .125rem;
+    --bs-dropdown-font-size: 1rem;
+    --bs-dropdown-color: #69707a;
+    --bs-dropdown-bg: #fff;
+    --bs-dropdown-border-color: #e0e5ec;
+    --bs-dropdown-border-radius: .35rem;
+    --bs-dropdown-border-width: 1px;
+    --bs-dropdown-inner-border-radius: calc(.35rem - 1px);
+    --bs-dropdown-divider-bg: #e0e5ec;
+    --bs-dropdown-divider-margin-y: .5rem;
+    --bs-dropdown-box-shadow: 0 .15rem 1.75rem 0 rgba(33, 40, 50, .15);
+    --bs-dropdown-link-color: #212832;
+    --bs-dropdown-link-hover-color: #1e242d;
+    --bs-dropdown-link-hover-bg: #e0e5ec;
+    --bs-dropdown-link-active-color: #fff;
+    --bs-dropdown-link-active-bg: #dc392d;
+    --bs-dropdown-link-disabled-color: #a7aeb8;
+    --bs-dropdown-item-padding-x: 1rem;
+    --bs-dropdown-item-padding-y: .25rem;
+    --bs-dropdown-header-color: #69707a;
+    --bs-dropdown-header-padding-x: 1rem;
+    --bs-dropdown-header-padding-y: .5rem;
+    position: absolute;
+    z-index: var(--bs-dropdown-zindex);
+    display: none;
+    min-width: var(--bs-dropdown-min-width);
+    padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+    margin: 0;
+    font-size: var(--bs-dropdown-font-size);
+    color: var(--bs-dropdown-color);
+    text-align: left;
+    list-style: none;
+    background-color: var(--bs-dropdown-bg);
+    background-clip: padding-box;
+    border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+    border-radius: var(--bs-dropdown-border-radius);
+}
+.dropdown .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+}
+/* 드롭다운 메뉴 끝 */
