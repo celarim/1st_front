@@ -206,7 +206,6 @@ fa-icon svg {
 }
 .navbar-marketing.fixed-top, .nav-fixed .navbar-marketing.topnav, .nav-fixed #layoutSidenav .navbar-marketing#layoutSidenav_nav {
     max-height: 100vh;
-    overflow-y: auto;
 }
 .navbar-marketing {
     padding-top: .9375rem;
