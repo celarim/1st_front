@@ -1,10 +1,21 @@
   .reply {
     position:relative;
+    top: 1rem;
     display:flex;
     flex-direction: column;
     flex-shrink: 1;
-    left: 1.5rem;
-    margin:1rem 2rem;
+    margin:1rem 1rem;
+  }
+
+  @media screen and (max-width:1110px) {
+    .reply {
+      position:relative;
+      top: 6rem;
+      display:flex;
+      flex-direction: column;
+      flex-shrink: 1;
+      margin:1rem 1rem;
+    }
   }
   
   .reply-section-title {

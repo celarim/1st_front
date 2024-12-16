@@ -1,17 +1,17 @@
 .section-second {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width:100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:100%;
 }
 .item-wrapper {
-    display:block;
-    flex: 1 0 41.66667%;
-    text-align: center;
-    width: 50%;
-    height: 24rem;
-    border-radius:0.4em;
-    margin:1em;
+  display:block;
+  flex: 1 0 41.66667%;
+  text-align: center;
+  width: 50%;
+  height: 24rem;
+  border-radius:0.4em;
+  margin:1em;
 }
 
 .chart {
@@ -23,11 +23,21 @@
 }
 
 .chart-wrapper {
+    position:relative;
     width:90%;
     display:flex;
     flex-direction: row;
     height:21rem;
     margin: 5em 1em;
+}
+
+.graph-wrapper {
+  position:relative;
+  width:90%;
+  display:flex;
+  flex-direction: column;
+  height:21rem;
+  margin: 5em 1em;
 }
 
 .mainpage  {
@@ -48,6 +58,84 @@
 }
 
 .shrink-title {
-    width:64rem;
+    width:80vw;
     margin: 2rem; 
+}
+
+  .col-xl-3 {
+    position: relative;
+    width: 23vw;
+    height: 8rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+/* 컨테이너 내부 row 시작*/
+  .row {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    width: 92%;
+  }
+  
+  .row-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .row_wrapper {
+    width:100%;
+  }
+
+@media screen and (max-width:1110px) {
+    .row {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .row .col-xl-3 {
+        width:100%;
+        height: 8rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .shrink-title {
+        width:16rem;
+        margin: 2rem; 
+    }
+
+    .item-wrapper {
+      display:block;
+      flex: 0 0 50%;
+      text-align: center;
+      width: 87vw;
+      height: 24rem;
+      border-radius:0.4em;
+      margin:1em 0;
+    }
+
+    .chart-wrapper {
+      width:88vw;
+      text-align:center;
+      display:flex;
+      flex-direction: column;
+      height:21rem;
+      margin: 5rem 1rem;
+    }
+
+    .graph-wrapper .chart {
+      position:relative;
+      top: 12rem;
+      display:flex;
+      width: 80vw;
+      flex-direction: column;
+      height:40rem;
+      margin:2rem 0;
+    }
+
 }
