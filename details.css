@@ -619,7 +619,7 @@
     padding:2em 0;
   }
   .commentbox > input {
-    font-size: 2vw;
+    font-size: max(min(2vw, 24px), 12px);
   }
 
 
