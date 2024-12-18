@@ -288,7 +288,6 @@ a {
 
 
 
-
 /* 헤더 */
 .navbar-collapse {
     flex-basis: 100%;
@@ -301,6 +300,11 @@ a {
 
 /* 헤더끝 */
 
+
+/* 검색 */
+.navbar-search {
+    margin-right: 1rem;
+}
 
 
 /* 내비게이션 바 요소들들 */
@@ -474,6 +478,11 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 @media (min-width: 1500px) {
     .nav-container-xl,.nav-container {
         max-width:1440px
+    }
+}
+@media (min-width: 992px) {
+      {
+        margin-right: 1rem;
     }
 }
 ol, ul {

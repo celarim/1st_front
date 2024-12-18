@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0041)https://startbootstrap.com/theme/personal -->
+
+<html lang="en">
+
+<head>
+
+  <title>
+    Personal - Free Bootstrap Template - Start Bootstrap</title>
+
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+      
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/navbar.css">
+  <style>
+
+  </style>
+</head>
+
+<body style="padding: 0px;">
+
+  <nav sbproscrollspy=""
+    class="navbar navbar-marketing navbar-expand-lg shadow bg-white navbar-light fixed-top">
+    <div class="nav-container">
+      <!-- 로고  -->
+      <a routerlink="/" class="navbar-brand text-black"
+        href="/main.html">
+        <img src="/images/atp.png" alt="Across The Pacific Logo">
+        <span class="ms-2">
+          Across The Pacific</span>
+      </a>
+      <!-- 로고끝 -->
+
+      <button type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" class="navbar-toggler">
+        <fa-icon class="ng-fa-icon">
+          <svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="bars"
+            class="svg-inline--fa fa-bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z">
+            </path>
+          </svg>
+        </fa-icon>
+      </button>
+
+      <!-- 네비 목록 시작 -->
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <!-- 메인 목록 시작 -->
+        <div class="navbar-nav">
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <ul class="navbar-nav me-auto">
+          <li ngbdropdown="" class="nav-item no-caret dropdown">
+            <a id="navbarDropdownThemes" ngbdropdowntoggle=""
+              data-cy="themesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" href="javascript:void(0);" class="dropdown-toggle nav-link pointer">
+              Portfolio<fa-icon class="ng-fa-icon dropdown-arrow">
+                <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                  class="svg-inline--fa fa-chevron-right" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512">
+                  <path fill="currentColor"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                  </path>
+                </svg>
+              </fa-icon>
+            </a>
+
+            <div ngbdropdownmenu="" aria-labelledby="navbarDropdownThemes"
+              class="dropdown-menu dropdown-menu-themes" data-bs-popper="static">
+              <a data-cy="adminAndDashboardThemeDropdownItem"
+                routerlink="/themes/admin-dashboard" class="dropdown-item"
+                href="https://startbootstrap.com/themes/admin-dashboard">
+                포트폴리오 만들기</a>
+              <a data-cy="browseAllThemesDropdownItem" routerlink="/themes"
+                class="dropdown-item" href="https://startbootstrap.com/themes">
+                모든 포트폴리오 보기</a>
+              <a data-cy="landingPagesDropdownItem"
+                routerlink="/themes/landing-pages" class="dropdown-item"
+                href="https://startbootstrap.com/themes/landing-pages">
+                명예의 전당</a>
+            </div>
+          </li>
+
+
+          <li ngbdropdown="" class="nav-item no-caret dropdown">
+            <a id="navbarDropdownTemplates" ngbdropdowntoggle=""
+              data-cy="templatesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" href="javascript:void(0);" class="dropdown-toggle nav-link pointer">
+              Stocks<fa-icon class="ng-fa-icon dropdown-arrow">
+                <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                  class="svg-inline--fa fa-chevron-right" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512">
+                  <path fill="currentColor"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                  </path>
+                </svg>
+              </fa-icon>
+            </a>
+            <div ngbdropdownmenu="" aria-labelledby="navbarDropdownTemplates"
+              class="dropdown-menu dropdown-menu-templates" data-bs-popper="static">
+              <a data-cy="browseAllTemplatesDropdownItem" routerlink="/templates"
+                class="dropdown-item" href="https://startbootstrap.com/templates">
+                모든 주식 보기</a>
+            </div>
+          </li>
+
+
+          
+        </ul>
+        <!-- 메인 목록 끝 -->
+
+        <!-- 오른쪽 인자들, blog, login -->
+        <div data-cy="topNavItemsRight"
+          class="navbar-nav align-items-lg-center nav-right">
+
+          <!-- 블로그 버튼 -->
+          <div class="nav-item">
+            <a data-cy="guidesNavLink" routerlink="/blog" class="nav-link pointer"
+              href="https://startbootstrap.com/blog">
+              알림!!</a>
+          </div>
+          
+          <!-- 로그인 버튼 -->
+          <sbpro-top-nav-item-user _nghost-serverapp-c49="">
+            <form _ngcontent-serverapp-c49="" novalidate=""
+              class="form-inline ng-untouched ng-pristine ng-valid">
+              <button _ngcontent-serverapp-c49="" data-cy="guidesNavLink" routerlink="/login.html"
+                class="btn btn-primary mb-3 mb-lg-0" tabindex="0">
+                Log In</button>
+            </form>
+          </sbpro-top-nav-item-user>
+
+
+        </div>
+        <!-- 오른쪽 끝 -->
+
+      </div>
+
+    </div>
+    <!-- 컨테이너 끝 -->
+  </nav>
+
+
+   <!-- Bootstrap core JavaScript-->
+   <script src="vendor/jquery/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+   <!-- Core plugin JavaScript-->
+   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+   <!-- Custom scripts for all pages-->
+   <script src="js/sb-admin-2.min.js"></script>
+
+   <!-- Page level plugins -->
+   <script src="vendor/chart.js/Chart.min.js"></script>
+
+   <!-- Page level custom scripts -->
+   <script src="js/demo/chart-area-demo.js"></script>
+   <script src="js/demo/chart-pie-demo.js"></script>
+</body>
+
+</html>
