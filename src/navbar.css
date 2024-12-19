@@ -301,11 +301,6 @@ a {
 /* 헤더끝 */
 
 
-/* 검색 */
-.navbar-search {
-    margin-right: 1rem;
-}
-
 
 /* 내비게이션 바 요소들들 */
 .navbar-marketing .navbar-nav .nav-item .nav-link {
@@ -340,6 +335,10 @@ a {
     font-size: .6em;
 }
 /* 요소 끝 */
+
+
+
+
 /* 오른쪽 요소들 */
 .nav-right {
     padding-top: 0;
@@ -413,6 +412,9 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     --bs-btn-disabled-bg: #dc392d;
     --bs-btn-disabled-border-color: #dc392d;
 }
+
+
+/* 검색 */
 /* min-width */
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {
@@ -481,13 +483,20 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     }
 }
 @media (min-width: 992px) {
-      {
+    .my-navbar-search  {
         margin-right: 1rem;
     }
 }
 ol, ul {
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+@media(max-width: 992px) {
+    
+    .search-nobottom {
+        padding-bottom: 0 !important
+    }
 }
 
 

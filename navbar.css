@@ -288,7 +288,6 @@ a {
 
 
 
-
 /* 헤더 */
 .navbar-collapse {
     flex-basis: 100%;
@@ -336,6 +335,10 @@ a {
     font-size: .6em;
 }
 /* 요소 끝 */
+
+
+
+
 /* 오른쪽 요소들 */
 .nav-right {
     padding-top: 0;
@@ -409,6 +412,9 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     --bs-btn-disabled-bg: #dc392d;
     --bs-btn-disabled-border-color: #dc392d;
 }
+
+
+/* 검색 */
 /* min-width */
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {
@@ -476,9 +482,21 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
         max-width:1440px
     }
 }
+@media (min-width: 992px) {
+    .my-navbar-search  {
+        margin-right: 1rem;
+    }
+}
 ol, ul {
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+@media(max-width: 992px) {
+    
+    .search-nobottom {
+        padding-bottom: 0 !important
+    }
 }
 
 
